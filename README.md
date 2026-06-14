@@ -31,6 +31,14 @@ Os modelos foram treinados por 10 épocas usando o otimizador Adam.
 - O **MobileNetV2** apresentou convergência rápida e estável, atingindo ~88% de acurácia na validação por volta da 7ª época.
 - A **CNN personalizada** apresentou maior variância (oscilando entre 65% e 80%), evidenciando a necessidade de técnicas adicionais para estabilizar o aprendizado em datasets menores.
 - **Grad-CAM:** Mapas de calor foram gerados para ambos os modelos, confirmando que as redes utilizam estruturas coerentes (como o formato circular das glândulas e os núcleos densos do tumor) para a tomada de decisão, em vez de focar em ruídos do fundo da lâmina.
+  
+### Exemplo de Interpretabilidade (Grad-CAM)
+<p align="center">
+  <img src="gradcam_exemplo.png" alt="Exemplo do Grad-CAM identificando Glândulas" width="800">
+</p>
+<p align="center">
+  <em>Comparação do mapa de ativação entre o modelo Transfer Learning (centro) e a CNN Customizada (direita).</em>
+</p>
 
 ## Como Executar
 1. Clone o repositório.
